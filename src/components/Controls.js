@@ -14,9 +14,9 @@ export default function Controls(props) {
     return <div className="menu top right">
         <Stack gap={3}>
             <DisplayModeButton>Empty Graph</DisplayModeButton>
-            {/* <DisplayModeButton>C5</DisplayModeButton>
+            <DisplayModeButton>C5</DisplayModeButton>
             <DisplayModeButton>C6</DisplayModeButton>
-            <DisplayModeButton>K5</DisplayModeButton> */}
+            <DisplayModeButton>K5</DisplayModeButton>
         </Stack>
     </div>
 }
