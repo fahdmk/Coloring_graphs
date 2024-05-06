@@ -86,7 +86,7 @@ export default class ColoredGraph extends React.Component {
                     group: 0,
                     color: COLORS[0],
                 }],
-                freezeLayout: true,
+                freezeLayout: false,
             }), () => setTimeout(() => this.minimalKColoring(), 10)
         )
     }
@@ -98,7 +98,7 @@ export default class ColoredGraph extends React.Component {
                 source: source,
                 target: target,
             }],
-            freezeLayout: false,
+            freezeLayout: true,
         }), () => setTimeout(() => this.minimalKColoring(), 10))
     }
 
@@ -123,7 +123,7 @@ export default class ColoredGraph extends React.Component {
             this.addEdge(this.state.selectedNode, node)
             this.setState({selectedNode: null})
         } else
-            this.setState({selectedNode: node, freezeLayout: true})
+            this.setState({selectedNode: node, freezeLayout: false})
     }
 
     drawNode(node, ctx) {
